@@ -20,54 +20,95 @@
     <!-- Card 1 -->
     <div class="card-thing">
       <div class="image">
-        <img src="bank.png" alt="Account 1 icon">
+        <img src="business icon.png" alt="Account 1 icon">
       </div>
       <div class="name">
-        <h2>Account 1</h2>
+        <h2>Business Account</h2>
       </div>
       <div class="description">
         <p>bunch of stuff about the acc</p>
       </div>
-      <div class="social-links">
-        <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+      <div class="actions">
+        <a href="#" class="btn btn-primary">Withdraw</a>
+        <a href="#" class="btn btn-secondary">Deposit</a>
+        <a href="#" class="btn btn-info">Transfer</a>
       </div>
+      
     </div>
 
     <!-- Card 2 -->
     <div class="card-thing">
       <div class="image">
-        <img src="bank.png" alt="Account 2 icon">
+        <img src="client icon.png" alt="Account 2 icon">
       </div>
       <div class="name">
-        <h2>Account 2</h2>
+        <h2>Client Account</h2>
       </div>
       <div class="description">
         <p>bunch of stuff about the acc</p>
       </div>
-      <div class="social-links">
-        <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+      <div class="actions">
+        <a href="#" class="btn btn-primary">Withdraw</a>
+        <a href="#" class="btn btn-secondary">Deposit</a>
+        <a href="#" class="btn btn-info">Transfer</a>
       </div>
     </div>
 
     <!-- Card 3 -->
     <div class="card-thing">
       <div class="image">
-        <img src="bank.png" alt="Account 3 icon">
+        <img src="renameaccounticon.png" alt="Account 3 icon">
       </div>
       <div class="name">
-        <h2>Account 3</h2>
+        <h2>Community Account</h2>
       </div>
       <div class="description">
         <p>bunch of stuff about the acc</p>
       </div>
-      <div class="social-links">
-        <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+      <div class="actions">
+        <a href="#" class="btn btn-primary">Withdraw</a>
+        <a href="#" class="btn btn-secondary">Deposit</a>
+        <a href="#" class="btn btn-info">Transfer</a>
       </div>
+      
     </div>
 
   </div>
 
-  
+  <!-- 1. The Button (Styled as a link pointing to the modal ID) -->
+  <a href="#account-modal" class="add-account-button">Add New Account type</a>
 
+  <!-- 2. The Popup Modal / Card (Hidden by default) -->
+  <div id="account-modal" class="modal-overlay">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3>Choose Account Type</h3>
+        <!-- Close button links back to '#' to deactivate the target -->
+        <a href="#" class="close-btn">&times;</a>
+      </div>
+
+      <div class="dropdown-group">
+        <label for="account-type">Select Account Type:</label>
+        <select id="account-type" class="custom-select">
+          <option value="" disabled selected>-- Choose type --</option>
+          <option value="community">Community</option>
+          <option value="client">Client</option>
+          <option value="business">Business</option>
+        </select>
+      </div>
+
+      <!-- <div class="dropdown-group">
+        <label for="account-select">Select Existing Account:</label>
+        <select id="account-select" class="custom-select">
+          <option value="" disabled selected>-- Choose an option --</option>
+          <option value="client">Client Account (**** 1234)</option>
+          <option value="community">Community Account (**** 5678)</option>
+          <option value="business">Business Account (**** 9012)</option>
+        </select>
+      </div> -->
+
+      <a href="#" class="submit-btn">Confirm Selection</a>
+    </div>
+  </div>
 </body>
 </html>
