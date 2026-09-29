@@ -1,0 +1,140 @@
+:root {
+  --purple: #4343fa;
+  --page-purple: rebeccapurple;
+  --soft-purple: rgb(163, 146, 180);
+  --surface: #ffffff;
+  --page-gray: #fafafa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 20px;
+}
+
+.logo {
+  display: block;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(35, 0, 177, 0.3);
+}
+
+.page-home {
+  background-color: var(--page-purple);
+}
+
+.banana {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: min(90vw, 64rem);
+  min-height: 75vh;
+  border: 2px solid var(--purple);
+  border-radius: 8px;
+  background-color: var(--surface);
+  box-shadow: 0 4px 15px var(--purple);
+}
+
+.page-login,
+.page-signup {
+  background-color: var(--soft-purple);
+}
+
+.page-forgotpassword,
+.page-dashboard {
+  background-color: var(--page-gray);
+}
+
+.inputs {
+  display: flex;
+  justify-content: center;
+  width: min(90vw, 40rem);
+}
+
+.page-login .card-thing,
+.page-signup .card-thing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: min(15rem, 90vw);
+  height: 25rem;
+  border: 2px solid #000000;
+  border-radius: 8px;
+  background-color: aqua;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.page-forgotpassword .card-thing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: min(40rem, 90vw);
+  min-height: 35rem;
+  padding: 2rem;
+  border: 2px solid var(--purple);
+  border-radius: 8px;
+  background-color: var(--surface);
+  box-shadow: 0 4px 15px var(--purple);
+}
+
+.overlay-text {
+  padding: 0 1rem;
+  font-size: large;
+  text-align: center;
+}
+
+.cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+.page-dashboard .card-thing {
+  display: flex;
+  flex: 0 1 18rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  min-height: 26rem;
+  padding: 1.5rem;
+  border: 2px solid var(--purple);
+  border-radius: 8px;
+  background-color: var(--surface);
+  box-shadow: 0 4px 15px rgba(67, 67, 250, 0.35);
+  text-align: center;
+}
+
+.page-dashboard .card-thing img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
